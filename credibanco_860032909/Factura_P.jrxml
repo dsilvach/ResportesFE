@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="facturadispapelestranspromo" pageWidth="612" pageHeight="792" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4f48bdc1-6b0e-46d3-96a2-a019335c73c3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="mm"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<subDataset name="Dataset1" uuid="b4f0f6cb-16d0-413f-8f01-84b831a6e0d0">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="encFactura" class="co.com.dispapeles.facturaelectronica.persistence.entidades.EBfel_encabezadofactura" evaluationTime="Early"/>
+	<parameter name="montoEscrito" class="String"/>
+	<parameter name="objEmpresa" class="co.com.dispapeles.facturaelectronica.persistence.entidades.EBGenEmpresas" evaluationTime="Early"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[descripcion]]></fieldDescription>
+	</field>
+	<field name="campoadicional10" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional10]]></fieldDescription>
+	</field>
+	<field name="fechaBaja" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaBaja]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.Integer">
+		<fieldDescription><![CDATA[estado]]></fieldDescription>
+	</field>
+	<field name="listaImpuestos" class="java.util.List">
+		<fieldDescription><![CDATA[listaImpuestos]]></fieldDescription>
+	</field>
+	<field name="listaImpuestosPro" class="java.util.List">
+		<fieldDescription><![CDATA[listaImpuestosPro]]></fieldDescription>
+	</field>
+	<field name="valorunitario" class="java.lang.Double">
+		<fieldDescription><![CDATA[valorunitario]]></fieldDescription>
+	</field>
+	<field name="campoadicional9" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional9]]></fieldDescription>
+	</field>
+	<field name="campoadicional8" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional8]]></fieldDescription>
+	</field>
+	<field name="idfactura" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idfactura]]></fieldDescription>
+	</field>
+	<field name="campoadicional7" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional7]]></fieldDescription>
+	</field>
+	<field name="posicion" class="java.lang.Integer">
+		<fieldDescription><![CDATA[posicion]]></fieldDescription>
+	</field>
+	<field name="campoadicional6" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional6]]></fieldDescription>
+	</field>
+	<field name="gramaje" class="java.lang.String">
+		<fieldDescription><![CDATA[gramaje]]></fieldDescription>
+	</field>
+	<field name="campoadicional5" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional5]]></fieldDescription>
+	</field>
+	<field name="codigoproducto" class="java.lang.String">
+		<fieldDescription><![CDATA[codigoproducto]]></fieldDescription>
+	</field>
+	<field name="campoadicional4" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional4]]></fieldDescription>
+	</field>
+	<field name="cantdisponotas" class="java.lang.Double">
+		<fieldDescription><![CDATA[cantdisponotas]]></fieldDescription>
+	</field>
+	<field name="idUsuarioMod" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioMod]]></fieldDescription>
+	</field>
+	<field name="notaDescuento" class="java.lang.String">
+		<fieldDescription><![CDATA[notaDescuento]]></fieldDescription>
+	</field>
+	<field name="campoadicional3" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional3]]></fieldDescription>
+	</field>
+	<field name="campoadicional2" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional2]]></fieldDescription>
+	</field>
+	<field name="campoadicional1" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional1]]></fieldDescription>
+	</field>
+	<field name="idFkEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idFkEmpresa]]></fieldDescription>
+	</field>
+	<field name="seriales" class="java.lang.String">
+		<fieldDescription><![CDATA[seriales]]></fieldDescription>
+	</field>
+	<field name="valorimpuestos" class="java.lang.Double">
+		<fieldDescription><![CDATA[valorimpuestos]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="idUsuarioAlta" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioAlta]]></fieldDescription>
+	</field>
+	<field name="listaPrecios" class="java.util.List">
+		<fieldDescription><![CDATA[listaPrecios]]></fieldDescription>
+	</field>
+	<field name="fechaAlta" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaAlta]]></fieldDescription>
+	</field>
+	<field name="descuento" class="java.lang.Double">
+		<fieldDescription><![CDATA[descuento]]></fieldDescription>
+	</field>
+	<field name="fechaMod" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaMod]]></fieldDescription>
+	</field>
+	<field name="porcentajedescuento" class="java.lang.Double">
+		<fieldDescription><![CDATA[porcentajedescuento]]></fieldDescription>
+	</field>
+	<field name="preciosinimpuestos" class="java.lang.Double">
+		<fieldDescription><![CDATA[preciosinimpuestos]]></fieldDescription>
+	</field>
+	<field name="tamanio" class="java.lang.String">
+		<fieldDescription><![CDATA[tamanio]]></fieldDescription>
+	</field>
+	<field name="cantidad" class="java.lang.Double">
+		<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+	</field>
+	<field name="idProducto" class="co.com.dispapeles.facturaelectronica.persistence.entidades.EBven_producto">
+		<fieldDescription><![CDATA[idProducto]]></fieldDescription>
+	</field>
+	<field name="preciototal" class="java.lang.Double">
+		<fieldDescription><![CDATA[preciototal]]></fieldDescription>
+	</field>
+	<field name="idUsuarioBaja" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioBaja]]></fieldDescription>
+	</field>
+	<field name="referencia" class="java.lang.String">
+		<fieldDescription><![CDATA[referencia]]></fieldDescription>
+	</field>
+	<field name="unidadmedida" class="java.lang.String">
+		<fieldDescription><![CDATA[unidadmedida]]></fieldDescription>
+	</field>
+	<field name="activo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[activo]]></fieldDescription>
+	</field>
+	<variable name="sumIva" class="java.lang.Double"/>
+	<variable name="sumOtrosImpuestos" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="484">
+			<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT} <= 6]]></printWhenExpression>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="296" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

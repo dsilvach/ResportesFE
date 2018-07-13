@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="facturadispapelestranspromo" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4f48bdc1-6b0e-46d3-96a2-a019335c73c3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="mm"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="net.sf.jasperreports.print.create.bookmarks" value="false"/>
+	<parameter name="encFactura" class="co.com.dispapeles.facturaelectronica.persistence.entidades.EBfel_encabezadofactura" evaluationTime="Early"/>
+	<parameter name="montoEscrito" class="String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[descripcion]]></fieldDescription>
+	</field>
+	<field name="campoadicional10" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional10]]></fieldDescription>
+	</field>
+	<field name="fechaBaja" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaBaja]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.Integer">
+		<fieldDescription><![CDATA[estado]]></fieldDescription>
+	</field>
+	<field name="listaImpuestos" class="java.util.List">
+		<fieldDescription><![CDATA[listaImpuestos]]></fieldDescription>
+	</field>
+	<field name="listaImpuestosPro" class="java.util.List">
+		<fieldDescription><![CDATA[listaImpuestosPro]]></fieldDescription>
+	</field>
+	<field name="valorunitario" class="java.lang.Double">
+		<fieldDescription><![CDATA[valorunitario]]></fieldDescription>
+	</field>
+	<field name="campoadicional9" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional9]]></fieldDescription>
+	</field>
+	<field name="campoadicional8" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional8]]></fieldDescription>
+	</field>
+	<field name="idfactura" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idfactura]]></fieldDescription>
+	</field>
+	<field name="campoadicional7" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional7]]></fieldDescription>
+	</field>
+	<field name="posicion" class="java.lang.Integer">
+		<fieldDescription><![CDATA[posicion]]></fieldDescription>
+	</field>
+	<field name="campoadicional6" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional6]]></fieldDescription>
+	</field>
+	<field name="gramaje" class="java.lang.String">
+		<fieldDescription><![CDATA[gramaje]]></fieldDescription>
+	</field>
+	<field name="campoadicional5" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional5]]></fieldDescription>
+	</field>
+	<field name="codigoproducto" class="java.lang.String">
+		<fieldDescription><![CDATA[codigoproducto]]></fieldDescription>
+	</field>
+	<field name="campoadicional4" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional4]]></fieldDescription>
+	</field>
+	<field name="cantdisponotas" class="java.lang.Double">
+		<fieldDescription><![CDATA[cantdisponotas]]></fieldDescription>
+	</field>
+	<field name="idUsuarioMod" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioMod]]></fieldDescription>
+	</field>
+	<field name="notaDescuento" class="java.lang.String">
+		<fieldDescription><![CDATA[notaDescuento]]></fieldDescription>
+	</field>
+	<field name="campoadicional3" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional3]]></fieldDescription>
+	</field>
+	<field name="campoadicional2" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional2]]></fieldDescription>
+	</field>
+	<field name="campoadicional1" class="java.lang.String">
+		<fieldDescription><![CDATA[campoadicional1]]></fieldDescription>
+	</field>
+	<field name="idFkEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idFkEmpresa]]></fieldDescription>
+	</field>
+	<field name="seriales" class="java.lang.String">
+		<fieldDescription><![CDATA[seriales]]></fieldDescription>
+	</field>
+	<field name="valorimpuestos" class="java.lang.Double">
+		<fieldDescription><![CDATA[valorimpuestos]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="idUsuarioAlta" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioAlta]]></fieldDescription>
+	</field>
+	<field name="listaPrecios" class="java.util.List">
+		<fieldDescription><![CDATA[listaPrecios]]></fieldDescription>
+	</field>
+	<field name="fechaAlta" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaAlta]]></fieldDescription>
+	</field>
+	<field name="descuento" class="java.lang.Double">
+		<fieldDescription><![CDATA[descuento]]></fieldDescription>
+	</field>
+	<field name="fechaMod" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaMod]]></fieldDescription>
+	</field>
+	<field name="porcentajedescuento" class="java.lang.Double">
+		<fieldDescription><![CDATA[porcentajedescuento]]></fieldDescription>
+	</field>
+	<field name="preciosinimpuestos" class="java.lang.Double">
+		<fieldDescription><![CDATA[preciosinimpuestos]]></fieldDescription>
+	</field>
+	<field name="tamanio" class="java.lang.String">
+		<fieldDescription><![CDATA[tamanio]]></fieldDescription>
+	</field>
+	<field name="cantidad" class="java.lang.Double">
+		<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+	</field>
+	<field name="idProducto" class="co.com.dispapeles.facturaelectronica.persistence.entidades.EBven_producto">
+		<fieldDescription><![CDATA[idProducto]]></fieldDescription>
+	</field>
+	<field name="preciototal" class="java.lang.Double">
+		<fieldDescription><![CDATA[preciototal]]></fieldDescription>
+	</field>
+	<field name="idUsuarioBaja" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioBaja]]></fieldDescription>
+	</field>
+	<field name="referencia" class="java.lang.String">
+		<fieldDescription><![CDATA[referencia]]></fieldDescription>
+	</field>
+	<field name="unidadmedida" class="java.lang.String">
+		<fieldDescription><![CDATA[unidadmedida]]></fieldDescription>
+	</field>
+	<field name="activo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[activo]]></fieldDescription>
+	</field>
+	<variable name="sumIva" class="java.lang.Double"/>
+	<variable name="sumOtrosImpuestos" class="java.lang.Double"/>
+	<variable name="Total_Pag" class="java.lang.Integer" incrementType="Report">
+		<variableExpression><![CDATA[$V{PAGE_NUMBER}]]></variableExpression>
+	</variable>
+	<background>
+		<band height="791" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<image>
+				<reportElement key="" positionType="Float" x="0" y="-8" width="612" height="799" uuid="c603a10c-9d6a-4cf5-ba43-4e428d8bdb1d"/>
+				<imageExpression><![CDATA["plantillaFactura.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="250">
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="503" y="33" width="80" height="12" backcolor="#C9C5C5" uuid="33d079e3-432c-42db-8c3e-e15d284e1401">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#D4CDCD"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getPrefijo() +" "+ $P{encFactura}.getConsecutivo()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="25" y="169" width="35" height="11" uuid="51354306-89fb-49af-8f2e-4901b6109b90">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional18()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="181" width="176" height="13" uuid="9774c723-69e6-4efa-acf7-8d9553203c75"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[UPPER($P{encFactura}.getNombrecompleto())]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="193" width="340" height="12" uuid="c85ccaba-0d6b-4d9c-9b99-9d88c03fb6e2">
+					<property name="com.jaspersoft.studio.unit.x" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getDireccion()+", "+$P{encFactura}.getCiudad()+"( "+$P{encFactura}.getDepartamento()+")"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="459" y="170" width="136" height="12" uuid="c671911f-06d9-464f-8633-0a06577628d1">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getNumeroidentificacion()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="450" y="183" width="114" height="12" uuid="c35dc5a8-087d-491a-91f5-111b12923de5">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getTelefono()]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement stretchType="RelativeToTallestObject" x="409" y="129" width="188" height="28" uuid="e243580f-118e-4116-921e-8914b97a69b3">
+					<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="0" barHeight="60" evaluationTime="Report">
+					<jr:codeExpression><![CDATA[$P{encFactura}.getCufe()]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement x="409" y="156" width="186" height="8" uuid="6921abf5-6c80-4c60-84fb-990ed63f2388"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCufe()]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement stretchType="RelativeToBandHeight" x="523" y="71" width="71" height="58" uuid="c4aa4724-c0e4-45c1-b4a6-42d7a29970fb">
+					<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" evaluationTime="Report">
+					<jr:codeExpression><![CDATA["NumFac: "+$P{encFactura}.getPrefijo() +"-"+ $P{encFactura}.getConsecutivo()+'\n'+"FecFac: "+new SimpleDateFormat("yyyyMMddhhmmss").format($P{encFactura}.getFechafacturacion())+'\n'+"NitFac: "+$P{encFactura}.getIdentificacionProveedor()+'\n'+"DocAdq: "+$P{encFactura}.getNumeroidentificacion()+'\n'+"ValFac: "+new DecimalFormat("#.00").format($P{encFactura}.getTotalbaseimponible()).replaceFirst(",", ".")+'\n'+"ValIva: "+ ($V{sumIva}==null ?"0.00": new DecimalFormat("#.00").format($V{sumIva}).replaceFirst(",", "."))+'\n'+"ValOtroIm: "+ ($V{sumOtrosImpuestos}==null ?"0.00":new DecimalFormat("#.00").format($V{sumOtrosImpuestos}).replaceFirst(",", "."))+'\n'+"ValFacIm: "+new DecimalFormat("#.00").format($P{encFactura}.getTotalfactura()).replaceFirst(",", ".")+'\n'+"CUFE: "+$P{encFactura}.getCufe()]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="206" width="240" height="12" uuid="e39f0f44-db20-4e59-958f-1535473fd1b9">
+					<property name="com.jaspersoft.studio.unit.x" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getNombrevendedor()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="444" y="195" width="114" height="12" uuid="87ae609f-ae0f-4b4c-9b4a-c397bf5df27f">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional19()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="99" y="59" width="301" height="9" uuid="9db4d488-9807-471c-b4cf-601b2abedbea">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional1()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="99" y="67" width="301" height="9" uuid="65b8947b-d45b-4d51-8051-ee07a768901e">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional2()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="99" y="77" width="301" height="9" uuid="4cf7b490-7985-43c4-a3a0-2f49ee7baa61">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional3()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="99" y="85" width="301" height="9" uuid="433066a9-1f5e-4080-903e-7c060de37aff">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional4()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="59" y="93" width="380" height="18" uuid="6dd2e710-ab6d-4e97-99d6-61a1d8ccf113"/>
+				<textElement textAlignment="Center" markup="html">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional8()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="60" y="169" width="176" height="11" uuid="37742726-26f0-488a-af29-3a9256b457e3">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getFechafacturacion()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="59" y="110" width="380" height="9" uuid="ce0bab8c-e58b-4ad3-b6ac-309206619554">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional5()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="59" y="118" width="380" height="9" uuid="6cdbfcfc-dd3b-43ce-af98-11eb31ffd680">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional6()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="435" y="209" width="160" height="12" uuid="514f8342-947c-49ac-9235-fd326cd83b2e">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getEmail()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="476" y="17" width="102" height="12" uuid="29aaa109-ffce-40f5-b1dc-accbf6302016">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional7()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="9" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+			<textField isBlankWhenNull="true">
+				<reportElement x="22" y="0" width="49" height="9" uuid="f64083ad-a950-41c2-b484-81769e1d291d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bfce198-474e-413c-875a-a3212dc8b002"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoproducto}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="352" y="0" width="48" height="9" uuid="92c51a35-d2be-4964-8c72-d0d78fede315">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bfce198-474e-413c-875a-a3212dc8b002"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="146" y="0" width="214" height="9" uuid="d4fe50dc-920c-46fd-8950-def24327e264">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bfce198-474e-413c-875a-a3212dc8b002"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="407" y="0" width="60" height="9" uuid="118fd6cf-dd34-4f8e-a327-729c48bfcecc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bfce198-474e-413c-875a-a3212dc8b002"/>
+					<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorunitario}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="475" y="0" width="28" height="9" uuid="be8ed5d6-04b7-41bc-a3e0-6038be811897">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bfce198-474e-413c-875a-a3212dc8b002"/>
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.x" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{porcentajedescuento}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="517" y="0" width="60" height="9" uuid="ab61ab92-5f12-4eba-9d69-bab6f5b856e7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bfce198-474e-413c-875a-a3212dc8b002"/>
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{preciototal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="75" y="0" width="68" height="9" uuid="ccd9c51c-3d60-4d68-8865-3a21a87e5120">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bfce198-474e-413c-875a-a3212dc8b002"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referencia}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="85" splitType="Prevent">
+			<textField isBlankWhenNull="true">
+				<reportElement x="436" y="67" width="104" height="9" uuid="eae981a8-86cf-4a15-ba0f-20a8924b3556"/>
+				<textElement textAlignment="Right">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="542" y="67" width="42" height="9" uuid="d709d2c3-b4a2-4867-ac8f-95d29a32eebc"/>
+				<textElement textAlignment="Left">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" de " + $V{Total_Pag}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="199">
+			<textField isBlankWhenNull="true">
+				<reportElement x="436" y="185" width="104" height="9" uuid="8807b8b3-6c5d-4d49-9ca3-681d7d27f3bc"/>
+				<textElement textAlignment="Right">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="542" y="185" width="42" height="9" uuid="3a122336-df01-491d-88db-248d552a8627"/>
+				<textElement textAlignment="Left">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" de " + $V{Total_Pag}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="40" y="71" width="458" height="13" uuid="55b2c246-fa56-422b-af2a-49e62016fa05"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Sirvase pagar a Distrimotos.."+$P{montoEscrito}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="99" y="86" width="71" height="13" uuid="a91de0f5-9826-4704-87b2-3773194229b0"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Forma de Pago: "]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="344" y="23" width="71" height="13" uuid="65fa6117-3fc6-4904-85ae-5248952904fe"/>
+				<textElement textAlignment="Left">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional16()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="322" y="86" width="58" height="11" uuid="d226b0e5-be85-4eae-b134-d82914149ac6">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getFechavencimiento()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="257" y="86" width="62" height="13" uuid="55846f63-0cb6-420a-910a-4b3809fa6b80"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Vence en:: "]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="483" y="2" width="109" height="9" uuid="cec93faf-3716-48a7-bb75-b7d2324c20a0">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getTotalimportebruto()]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="483" y="58" width="109" height="11" uuid="5733445d-955d-4d12-b88e-b1fe67f0b3ea"/>
+				<textElement textAlignment="Right">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getTotalfactura()]]></textFieldExpression>
+			</textField>
+			<subreport isUsingCache="false" runToBottom="true" overflowType="NoStretch">
+				<reportElement positionType="Float" x="478" y="36" width="98" height="9" uuid="93cbe774-dba1-4d68-a1bd-db9d59123689">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{encFactura}.getListaImpuestos())]]></dataSourceExpression>
+				<returnValue subreportVariable="sumIva" toVariable="sumIva"/>
+				<subreportExpression><![CDATA["/mnt/fileserver/docelectronicos/subreportesGenericos/sumIva.jasper"]]></subreportExpression>
+			</subreport>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="483" y="13" width="109" height="9" uuid="d7398926-2e0d-40de-a259-55e86839f756">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getDescuento()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="23" y="4" width="96" height="9" uuid="5d1e41c3-a548-4ad1-b2e3-908ce8978c2b">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Pedido:    "+ $P{encFactura}.getOrdencompra()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="435" y="2" width="48" height="11" uuid="1769675e-3334-4413-946b-6dabf2bf7da8"/>
+				<textElement textAlignment="Right">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Subtotal: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="13" width="48" height="11" uuid="639ece69-4890-4b28-b479-325c90b09ab1"/>
+				<textElement textAlignment="Right">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descuentos:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="59" width="48" height="11" uuid="79a3c5a3-e49c-4087-ad94-fcf0ac80da3f"/>
+				<textElement textAlignment="Right">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="24" width="48" height="11" uuid="d60532d8-c200-4736-900b-42b0fb349ca9"/>
+				<textElement textAlignment="Right">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fletes:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="35" width="48" height="11" uuid="ec619df7-1274-49e8-ae66-be68e3e39c7a"/>
+				<textElement textAlignment="Right">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Impuestos:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="46" width="48" height="11" uuid="bdec5825-f08d-4826-9d7f-37e6e9f39560"/>
+				<textElement textAlignment="Right">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Retenciones:]]></text>
+			</staticText>
+			<subreport isUsingCache="false" runToBottom="true" overflowType="NoStretch">
+				<reportElement positionType="Float" x="478" y="47" width="98" height="9" uuid="2e18e87b-c04a-4f6e-a2c2-15df87c0722d">
+					<property name="com.jaspersoft.studio.unit.y" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{encFactura}.getListaImpuestos())]]></dataSourceExpression>
+				<returnValue subreportVariable="sumOtrosImpuestos" toVariable="sumOtrosImpuestos"/>
+				<subreportExpression><![CDATA["/mnt/fileserver/docelectronicos/subreportesGenericos/sumRetefuenteIva.jasper"]]></subreportExpression>
+			</subreport>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="483" y="25" width="109" height="9" uuid="58a58e44-cd75-41b4-9ee1-37ed620c7ad7">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional15()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="329" y="3" width="71" height="13" uuid="cb58bdda-99ce-41cc-82e2-b3c8bf5095a4"/>
+				<textElement textAlignment="Left">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encFactura}.getCampoAdicional20()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="312" y="3" width="24" height="18" uuid="6d423365-d68b-4546-aade-13ac9c8cb906"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Art:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="23" width="44" height="18" uuid="3a754a5c-45e5-4bac-b25e-80e5ce826ed6"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Cupones:]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="251" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<subreport isUsingCache="false" runToBottom="true">
+				<reportElement x="0" y="0" width="612" height="251" uuid="c01a5571-9e4c-4bb9-9b8a-ae2e563bd16c"/>
+				<subreportParameter name="encFactura">
+					<subreportParameterExpression><![CDATA[$P{encFactura}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{encFactura}.getListaAdicionales())]]></dataSourceExpression>
+				<subreportExpression><![CDATA["/inserto_1.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>

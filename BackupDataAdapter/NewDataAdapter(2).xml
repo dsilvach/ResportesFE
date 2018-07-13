@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dsDataAdapter class="net.sf.jasperreports.data.ds.DataSourceDataAdapterImpl"><name>New Data Adapter (2)</name><factoryClass>co.com.dispapeles.facturaelectronica.persistence.entidades.EBfel_detallefactura</factoryClass><methodToCall></methodToCall></dsDataAdapter>

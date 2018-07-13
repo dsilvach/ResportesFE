@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beanDataAdapter class="net.sf.jasperreports.data.bean.BeanDataAdapterImpl"><name>FacturaModificadaDataAdapter</name><factoryClass>co.com.dispapeles.facturaelectronica.persistence.entidades.EBfel_encabezadofactura</factoryClass><methodName>getListaFacturasmodificadas</methodName><useFieldDescription>false</useFieldDescription></beanDataAdapter>

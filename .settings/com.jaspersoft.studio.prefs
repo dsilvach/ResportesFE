@@ -1,0 +1,13 @@
+FONT_LIST=<?xml version\="1.0" encoding\="UTF-8"?>\n<fontFamilies/>\n
+com.jaspersoft.studio.jr.compile.version=last
+com.jaspersoft.studio.parametersets=SmFzcGVyc29mdCBTZXJ2ZXIgQnVpbHQgSW4gUGFyYW1ldGVycwpIdHRwIERhdGEgQWRhcHRlcnMg\nQnVpbHQgSW4gUGFyYW1ldGVycwo\=\n
+com.jaspersoft.studio.theme.ui.dark=pageBackground\=0,0,0\ncontainerMarginColor\=0,255,0\ngridColor\=255,255,255\nelementDesignBorderColor\=255,255,0\npageMarginColor\=255,0,0\n
+com.jaspersoft.studio.theme.ui.light=pageBackground\=255,255,255\ncontainerMarginColor\=170,168,255\ngridColor\=192,192,192\nelementDesignBorderColor\=0,0,0\npageMarginColor\=170,168,255\n
+eclipse.preferences.version=1
+internalEditorsFont=1|Arial|6.75|0|WINDOWS|1|-9|0|0|0|400|0|0|0|0|3|2|1|34|Arial;
+net.sf.jasperreports.JRPROPERTIES=com.jaspersoft.jasperreports.components.customvisualization.require.js\=file\\\:/C\\\:/Program Files (x86)/TIBCO/Jaspersoft Studio-6.4.3.final/configuration/org.eclipse.osgi/24/0/.cp/resources/scripts/require-2.1.6.src.js\nnet.sf.jasperreports.web.resource.pattern.customvisualization.scripts\=com/jaspersoft/jasperreports/customvisualization/resources/require/.*\nnet.sf.jasperreports.compiler.temp.dir\=C\\\:\\\\Program Files (x86)\\\\TIBCO\\\\Jaspersoft Studio-6.4.3.final\nnet.sf.jasperreports.compiler.classpath\=C\\\:\\\\Program Files (x86)\\\\TIBCO\\\\Jaspersoft Studio-6.4.3.final\\\\\\\\plugins/org.eclipse.equinox.launcher_1.3.201.v20161025-1711.jar\n
+pageDEFAULTUNITS=mm
+rulerMeasure=1
+tableCrosstabChangeStyle=ask_everytime
+tableCrosstabDelete=ask_everytime
+tableCrosstabDeleteStyle=ask_everytime

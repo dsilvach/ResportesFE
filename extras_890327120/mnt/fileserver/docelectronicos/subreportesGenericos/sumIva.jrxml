@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Impuestos" pageWidth="114" pageHeight="9" columnWidth="114" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ca483302-6b3a-45e0-b086-b96b3862a6cd">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ImpuestosDataAdapter"/>
+	<property name="com.jaspersoft.studio.unit." value="mm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="mm"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fechaBaja" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaBaja]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.Integer">
+		<fieldDescription><![CDATA[estado]]></fieldDescription>
+	</field>
+	<field name="fechaAlta" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaAlta]]></fieldDescription>
+	</field>
+	<field name="fechaMod" class="java.util.Date">
+		<fieldDescription><![CDATA[fechaMod]]></fieldDescription>
+	</field>
+	<field name="codigoImpuestoRetencion" class="java.lang.String">
+		<fieldDescription><![CDATA[codigoImpuestoRetencion]]></fieldDescription>
+	</field>
+	<field name="baseimponible" class="java.lang.Double">
+		<fieldDescription><![CDATA[baseimponible]]></fieldDescription>
+	</field>
+	<field name="idfactura" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idfactura]]></fieldDescription>
+	</field>
+	<field name="codigoproducto" class="java.lang.String">
+		<fieldDescription><![CDATA[codigoproducto]]></fieldDescription>
+	</field>
+	<field name="idUsuarioMod" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioMod]]></fieldDescription>
+	</field>
+	<field name="idFkEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idFkEmpresa]]></fieldDescription>
+	</field>
+	<field name="valorImpuestoRetencion" class="java.lang.Double">
+		<fieldDescription><![CDATA[valorImpuestoRetencion]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="porcentaje" class="java.lang.Double">
+		<fieldDescription><![CDATA[porcentaje]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="idUsuarioAlta" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioAlta]]></fieldDescription>
+	</field>
+	<field name="idUsuarioBaja" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idUsuarioBaja]]></fieldDescription>
+	</field>
+	<field name="activo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[activo]]></fieldDescription>
+	</field>
+	<variable name="sumIva" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[("01".equals($F{codigoImpuestoRetencion})  &&  ("".equals($F{codigoproducto}) || $F{codigoproducto}==null))?  $F{valorImpuestoRetencion} : 0]]></variableExpression>
+	</variable>
+	<variable name="sumOtrosImpuestos" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[(("02".equals($F{codigoImpuestoRetencion})  &&  ("".equals($F{codigoproducto}) || $F{codigoproducto}==null)) || 
+("03".equals($F{codigoImpuestoRetencion})  &&  ("".equals($F{codigoproducto}) || $F{codigoproducto}==null)) || 
+("04".equals($F{codigoImpuestoRetencion})  &&  ("".equals($F{codigoproducto}) || $F{codigoproducto}==null)) || 
+("05".equals($F{codigoImpuestoRetencion})  &&  ("".equals($F{codigoproducto}) || $F{codigoproducto}==null)) || 
+("06".equals($F{codigoImpuestoRetencion})  &&  ("".equals($F{codigoproducto}) || $F{codigoproducto}==null)) || 
+("07".equals($F{codigoImpuestoRetencion})  &&  ("".equals($F{codigoproducto}) || $F{codigoproducto}==null))) ?  $F{valorImpuestoRetencion} : 0]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnFooter>
+		<band height="9" splitType="Stretch">
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="0" width="114" height="9" uuid="d21a8825-0d1c-47a6-bf8e-e0620eb7efda">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{sumIva}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

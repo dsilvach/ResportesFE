@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="facturaModificada" pageWidth="113" pageHeight="9" columnWidth="113" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b746a6b0-f02d-4e22-a735-18c82df456b5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="FacturaModificadaDataAdapter"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<property name="com.jaspersoft.studio.unit." value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="mm"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fechafacturamodificada" class="java.util.Date">
+		<fieldDescription><![CDATA[fechafacturamodificada]]></fieldDescription>
+	</field>
+	<field name="cufefacturamodificada" class="java.lang.String">
+		<fieldDescription><![CDATA[cufefacturamodificada]]></fieldDescription>
+	</field>
+	<field name="consecutivofacturamodificada" class="java.lang.String">
+		<fieldDescription><![CDATA[consecutivofacturamodificada]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="idfkempresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idfkempresa]]></fieldDescription>
+	</field>
+	<field name="observacion" class="java.lang.String">
+		<fieldDescription><![CDATA[observacion]]></fieldDescription>
+	</field>
+	<field name="idfactura" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idfactura]]></fieldDescription>
+	</field>
+	<variable name="consecutivofacturamod" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="9" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="113" height="9" uuid="5dd115ed-6771-4636-8b50-ee4acf579075">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ced9bf33-5cb0-4cf7-95d4-714a554fe031"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consecutivofacturamodificada}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
